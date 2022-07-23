@@ -3,6 +3,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "lint": "next lint",
+    "fix": "next lint --fix",
     "start": "next start",
     "test": "jest --watch",
     "test:ci": "jest --ci"
@@ -17,8 +19,16 @@
     "@testing-library/react": "13.2.0",
     "@testing-library/user-event": "14.2.0",
     "@types/react": "18.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.30.7",
+    "eslint": "^8.20.0",
+    "eslint-config-next": "^12.2.3",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-testing-library": "^5.5.1",
     "jest": "28.1.0",
     "jest-environment-jsdom": "28.1.0",
+    "prettier": "^2.7.1",
     "typescript": "4.6.4"
   }
 }
