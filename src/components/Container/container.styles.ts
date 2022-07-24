@@ -6,8 +6,16 @@ const Container = styled.div`
   display: grid;
   padding: 2rem;
   grid-template-columns: auto 1fr;
+  column-gap: 0.5rem;
+  row-gap: 0.5rem;
   p {
     margin: 0;
+  }
+  .response {
+    grid-column: 1 / 3;
+  }
+  .command {
+    grid-column: 1 / 3;
   }
   input {
     border: none;
