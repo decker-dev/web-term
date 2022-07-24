@@ -9,7 +9,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     inputRef.current?.focus();
   };
   return (
-    <div onClick={onClickAnywhere} className="bg">
+    <div onClick={onClickAnywhere}>
       <Component {...pageProps} inputRef={inputRef} />
     </div>
   );
