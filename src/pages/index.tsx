@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
-
-export const App = () => {
+import Container from '@/components/Container/container.styles';
+interface PageProps {
+  inputRef: React.MutableRefObject<HTMLInputElement>;
+}
+export const App: React.FC<PageProps> = ({ inputRef }) => {
   const [history, setHistory] = useState<Array<string>>([]);
 
   const HandleKeyUp = (e: React.KeyboardEvent<HTMLInputElement>) => {
@@ -11,13 +14,16 @@ export const App = () => {
   };
 
   return (
-    <>
-      {history.map((command, index) => (
-        <div key={index}>{command}</div>
+    <Container>
+      {history.map((value, index) => (
+        <>
+          <p>decker@decker:$ ~ </p>
+          <div key={index}>{value}</div>
+        </>
       ))}
-      <p>Decker@decker</p>
-      <input onKeyDown={HandleKeyUp} autoFocus />
-    </>
+      <p>decker@decker:$ ~ </p>
+      <input onKeyDown={HandleKeyUp} autoFocus ref={inputRef} />
+    </Container>
   );
 };
 

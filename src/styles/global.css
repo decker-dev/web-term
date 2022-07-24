@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'JetBrainsMono-Regular';
+  src: url('../../public/assets/JetBrainsMono-Regular.ttf');
+  font-display: swap;
+}
+* {
+  font-family: 'JetBrainsMono-Regular', monospace;
+}
 body {
   background: #FBF1C9;
+  margin: 20px;
+  min-height: 94vh;
+  height: 94%;
+  border: 2px solid #000;
 }
