@@ -7,7 +7,11 @@
   font-family: 'JetBrainsMono-Regular', monospace;
 }
 body {
+  margin: 0;
+  padding: 0;
   background: #FBF1C9;
+}
+.bg {
   margin: 20px;
   min-height: 94vh;
   height: 94%;
