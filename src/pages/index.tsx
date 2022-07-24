@@ -22,17 +22,19 @@ export const App: React.FC<PageProps> = ({ inputRef }) => {
 
   return (
     <Container>
-      {command.map((command: Command, index: number) => (
-        <>
-          <p>decker@decker:$ ~ </p>
-          <p key={index}>{command.name}</p>
-          <div></div>
-          <p>{command.description}</p>
-        </>
-      ))}
-      {command[command.length - 1]?.action && command[command.length - 1].action()}
-      <p>decker@decker:$ ~ </p>
-      <input onKeyDown={HandleKeyUp} autoFocus ref={inputRef} />
+      <>
+        {command.map((command: Command, index: number) => (
+          <>
+            <p>decker@decker:$ ~ </p>
+            <p key={index}>{command.name}</p>
+            <div></div>
+            <p>{command.description}</p>
+          </>
+        ))}
+        {command[command.length - 1]?.action && command[command.length - 1].action()}
+        <p>decker@decker:$ ~ </p>
+        <input onKeyDown={HandleKeyUp} autoFocus ref={inputRef} />
+      </>
     </Container>
   );
 };

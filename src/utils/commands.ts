@@ -16,6 +16,10 @@ export const commands = (value: string): Command => {
         window.open(`https://github.com/decker-dev`);
       },
     },
+    ls: {
+      name: 'ls',
+      description: 'passwords.csv Crypto wallet Photos',
+    },
   };
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
