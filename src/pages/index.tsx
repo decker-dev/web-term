@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import Container from '@/components/Container/container.styles';
 import { commands } from '../utils/commands';
 import Command from '@/types/Command';
-import { Input } from '@/components/index';
+import { Input, Container } from '@/components/index';
 import ReactHTMLParser from 'react-html-parser';
 interface PageProps {
   inputRef: React.MutableRefObject<HTMLInputElement>;
