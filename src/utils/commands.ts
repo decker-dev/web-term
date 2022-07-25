@@ -1,19 +1,19 @@
 import Command from '@/types/Command';
-
+import config from 'config/commands.json';
 export const commands = (value: string, param?: string): Command => {
   const command = {
     linkedin: {
       name: 'linkedin',
       description: 'Open linkedin profile',
       action: () => {
-        window.open(`https://www.linkedin.com/in/decker-urbano/`);
+        window.open(`https://www.linkedin.com/in/${config.linkedin}/`);
       },
     },
     github: {
       name: 'github',
       description: 'Open github profile',
       action: () => {
-        window.open(`https://github.com/decker-dev`);
+        window.open(`https://github.com/${config.linkedin}`);
       },
     },
     ls: {
@@ -33,7 +33,7 @@ export const commands = (value: string, param?: string): Command => {
       name: 'email',
       description: 'Open email',
       action: () => {
-        window.open(`mailto:deckerurbano@gmail`);
+        window.open(`mailto:${config.email}`);
       },
     },
     echo: {
