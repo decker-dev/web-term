@@ -1,5 +1,5 @@
 export default interface Command {
   name: string;
   description: string;
-  action: () => Promise<void>;
+  action?: () => Promise<void>;
 }

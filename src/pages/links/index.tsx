@@ -8,8 +8,9 @@ export const links = () => {
         <div className="column">
           <h1>Decker Urbano</h1>
           <p>
-            Desarrollador, especializado en JavaScript, Apasionado por el desarrollo Web y ultimamente muy interesado
-            con la tecnologia blockchain
+            Desarrollador de software que disfruta creando soluciones a problemas únicos. Trabajo principalmente con
+            React y TypeScript para proporcionar soluciones limpias y eficientes para crear mejores productos de
+            software.
           </p>
           <a
             className="button button-linked"
@@ -71,7 +72,7 @@ export const links = () => {
             rel="noopener noreferrer"
           >
             <img className="icon" src="/images/icons/email.svg" alt="Email Icon" />
-            deckerurbano@gmail.com
+            Mail
           </a>
         </div>
       </div>
