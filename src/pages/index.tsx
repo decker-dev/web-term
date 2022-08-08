@@ -3,7 +3,6 @@ import { commands } from '@/utils/commands';
 import Command from '@/types/Command';
 import { Input, Container } from '@/components/index';
 import ReactHTMLParser from 'react-html-parser';
-import Head from 'next/head';
 interface PageProps {
   inputRef: React.MutableRefObject<HTMLInputElement>;
 }
@@ -15,7 +14,7 @@ export const App: React.FC<PageProps> = ({ inputRef }) => {
       description: `
     Desarrollador de software que disfruta creando soluciones a problemas únicos. Trabajo principalmente con React y TypeScript para proporcionar soluciones limpias y eficientes para crear mejores productos de software.<br>
     Ingrese 'help' para ver la lista de comandos disponibles<br>
-    Haga click <a href='http://localhost:3000/links'>aca</a> para ver una version simplificada`,
+    Haga click <a href='https://www.deckerurbano.com/links'>aca</a> para ver una version simplificada`,
     },
   ]);
 
